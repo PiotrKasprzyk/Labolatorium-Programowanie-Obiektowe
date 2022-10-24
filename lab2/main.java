@@ -1,7 +1,22 @@
 public class main {
     public static void main(string[] args) {
 Zadanie5();
+           Scanner odczyt = new Scanner(System.in);
 
+        string pada = odczyt.nextString();
+		string autobus = odczyt.nextString();
+		string znizka = odczyt.nextString();
+		string podwyzka = odczyt.nextString();
+		int x = odczyt.nextInt();
+		int y = odczyt.nextInt();
+		int z = odczyt.nextInt();
+        System.out.println(pada);
+  		System.out.println(autobus);
+        System.out.println(znizka);
+  		System.out.println(podwyzka);
+ 		System.out.println(x);
+  		System.out.println(y);
+        System.out.println(z);
         System.out.println("Palindrom"+a+"czy palindrom");
         System.out.println("Palindrom"+b+"czy palindrom");
         System.out.println("Palindrom"+c+"czy palindrom");
@@ -105,5 +120,90 @@ return true;
         }
 
         }
+public static double zadanie 2(){
+double x,y,z;
+if(x>0)
+{
+ System.out.println("a(x)="+(x*2));
+}
+if(x==0){
+ System.out.println("a(x)="+"0");
+}
+if(x<0){
+ System.out.println("a(x)="+(x*(-3)));
+}
+if(y>=1){
+ System.out.println("b(y=)"+(y*y));
+}
+if(y<1)
+{
+ System.out.println("b(y)="+y);
+}
+if(z>2)
+{
+ System.out.println("c(z)="+(z+2));
+}
+if(z==2 )
+{
+ System.out.println("c(z)="+"8");
+}
+if(z<2)
+{
+ System.out.println("c(z)"+(z-4));
+}
 
+}
+public static double zadanie 3(){
+double x=3,y=1.5,z=1,tab[x,y,z];
+array.sort(tab);
+
+}
+public static string zadanie 4() {
+string pada,autobus;
+if(pada&&autobus){
+System.out.println("Weź parasol"+"Dostaniesz się na uczelnie");
+}
+if(pada && (!autobus))
+{System.out.println("Nie dostaniesz się na uczelnie")}
+if((!pada)&&autobus){
+System.out.println("Dostaniesz się na uczelnie"+"Miłego dnia i pięknej pogody");
+}
+}
+public static string zadanie 5 (){
+string znizka,podwyzka;
+if((!znizka)||podwyzka){
+System.out.println("Możesz kupić samochód!"+"Zniżki na samochód nie ma");
+}
+}
+
+if((!znizka)||(!podwyzka)){
+System.out.println("Zakup samochodu trzeba odłozyć na później.."+"Zniżki na samochód nie ma");
+}
+}
+if(znizka||podwyzka){
+}
+System.out.println("Możesz kupić samochód!");
+}
+}
+public static double zadanie6(){
+double a,b,c
+int kaukulator = 4
+switch(kaukulator)
+case dodawanie:
+a+b=c;
+System.out.println("Wynik="+c);
+break;
+case odejmowanie:
+a-b=c;
+System.out.println("Wynik="+c);
+break;
+case dzielenie:
+a/b=c;
+System.out.println("Wynik="+c);
+break;
+case mnozenie:
+a*b=c;
+System.out.println("Wynik="+c);
+break;
+}
 }
