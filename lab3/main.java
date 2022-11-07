@@ -94,14 +94,34 @@ public static double losuj(){
             return liczba;
 }
 public static void Zadanie2(){
-        double []tab1=newDouble[20];
-    double []tab2=newDouble[21];
+        int tablica1 = 6;
+        int tablica2 = 8;
+        int [] tab1 = new int [tablica1];
+        for (int i = 0; i < tablica1; i++) {
+            System.out.println("Podaj " + (i+1) + " element 1 tablicy: ");
+            tablica1[i] = InputInt();
+        }
+        int [] tablica2 = new int [tablica2];
+        for (int i = 0; i < tablica2; i++) {
+            System.out.println("Podaj " + (i+1) + " element 2 tablicy: ");
+            tablica2[i] = InputInt();
+        }
 
-    for (int i = 0; i < tab1[].length; i+2) {
-        System.out.printf(tab1[i]+"\n");
-        System.out.printf(tab2[i]+"\n");
+
+        System.out.println("Co drugi element 1 tablicy: ");
+        for (int i = 0; i < tablica1; i++) {
+            if ((i+1)%2 == 0){
+                System.out.printf(tablica1[i]);
+            }
+        }
+        System.out.println("Co drugi element 2 tablicy: ");
+        for (int i = 0; i < tablica2; i++) {
+            if ((i+1)%2 == 0){
+                System.out.printf(tablica2[i]);
+            }
+        }
     }
-}
+
 public static void Zadanie 3(){
         string[]wyrazy=newString[22];
         wyrazy[]={"ala","tygrys","zjadł"};
@@ -112,6 +132,85 @@ public static void Zadanie 3(){
         }
     }
     public static void Zadanie4(){
+String [] tab = new String[5];
+
+        for (int i = 0; i < tab.length; i++) {
+            System.out.println("Podaj " + (i+1) + " slowo: ");
+            tab[i] = InputString();
+        }
+
+
+        for (int i = 0; i < tab.length; i++) {
+            tab[i] = ReverseString(tab[i]);
+        }
+
+
+        System.out.println();
+        for (int i = tab.length - 1; i >= 0; i--) {
+            System.out.printf(tab[i] + " ");
+        }
 
     }
-}
+
+
+public static void Zadanie5() {
+        
+
+        int [] tablica = new int[8];
+    BubbleSort sort = new BubbleSort();
+        for (int i = 0; i < 8; i++) {
+            System.out.println("Wpisz " + (i+1) + "/8 int.");
+            tablica[i] = InputInt();
+        }
+
+
+        sort.bubbleSort(tablica);
+        System.out.println("Sorted:");
+        printArray(tablica);
+    }
+
+
+    public static void Zadanie6() {
+
+        int [] tablica = new int[5];
+        for (int i = 0; i < 5; i++) {
+            System.out.println("Wpisz " + (i+1) );
+            tablica[i] = InputInt();
+        }
+
+
+
+        for (int i = 0; i < tablica.length; i++) {
+            int silnia = 1;
+            for (int j = 1; j <= tablica[i]; j++) {
+                silnia *= j;
+            }
+            tablica[i] = silnia;
+        }
+
+
+        printArray(tablica);
+    }
+    public static void Zadanie7() {
+        String [] tablica1 = {"ala", "ma", "tygrysa"};
+        String [] tablica2 = {"ala", "ma", "tygrysa"};
+
+        boolean isEqual = true;
+
+        int i = 0;
+        while (isEqual && i < tab1.length && i < tab2.length){
+
+
+            if(!tablica1[i].equals(tablica2[i])){
+                isEqual = false;
+                i = tablica1.length;
+            }
+            i++;
+        }
+
+
+        System.out.println("Tablice: ");
+        printArray(tablica1);
+        printArray(tablica2);
+        System.out.println("Czy tablice są równe " + isEqual);
+    }
