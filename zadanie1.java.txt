@@ -1,0 +1,34 @@
+import javax.swing.*;
+
+public class Zadanie1Form extends JFrame {
+    private JPanel panel;
+    private JTextField textField1;
+    private JTextField textField2;
+
+    public static void main(String[] args) {
+        Zadanie1Form form = new Zadanie1Form();
+        form.setVisible(true);
+    }
+
+    public Zadanie1Form() {
+        super();
+        this.setContentPane(this.panel);
+        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        this.pack();
+        this.setSize(400,300);
+
+        textField1.addActionListener(k -> {
+            double q = Double.parseDouble(textField1.getText());
+            double w = (2 * 4/7) + 30;
+            textField2.setText(""+f);
+        });
+
+        textField2.addActionListener(e -> {
+            double q = Double.parseDouble(textField2.getText());
+            double w = (2 - 30) * 4/7;
+            textField1.setText(""+w);
+        });
+
+
+    }
+}
